@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#010101">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:background="#515151"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+
+         />
+
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/my"
+        android:src="@drawable/camera1"
+        android:layout_below="@+id/imageButton4"
+        android:layout_toLeftOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/imageButton5"
+        android:onClick="oNCamera"/>
+
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageButton33"
+        android:background="@drawable/my"
+        android:src="@drawable/ic_flash"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:onClick="oNflash"/>
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/my"
+        android:src="@drawable/ic_wifi"
+        android:layout_above="@+id/imageButton33"
+        android:layout_centerHorizontal="true"
+        android:onClick="oNWifi"/>
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageButton5"
+        android:background="@drawable/my"
+        android:src="@drawable/ic_action"
+
+        android:layout_below="@+id/imageButton33"
+        android:layout_toLeftOf="@+id/imageButton33"
+        android:layout_toStartOf="@+id/imageButton33"
+        android:onClick="oNHome"
+        />
+
+
+
+</RelativeLayout>
